@@ -65,7 +65,7 @@ AWS Console → IAM → Users → your user → Security credentials → Create 
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/ploton.git
+git clone https://github.com/narendra346/ploton.git
 cd ploton
 ```
 
