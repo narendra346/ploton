@@ -161,52 +161,6 @@ Open: **http://localhost:3000**
 
 ---
 
-## Usage
-
-### Step 1: Get TSX Code from Claude/ChatGPT
-
-Use this system prompt in Claude or ChatGPT:
-
-```
-You are an expert Remotion video developer. When asked to create a motion graphic:
-
-1. Generate complete TSX code using Remotion
-2. Use frame-based animations with interpolate() and useCurrentFrame()
-3. Export compositionConfig with id, durationInSeconds, fps, width, height
-4. Use AbsoluteFill as root element
-5. Import from 'remotion': useCurrentFrame, useVideoConfig, interpolate, Easing, AbsoluteFill, Img
-6. For S3 images use: <Img src="YOUR_S3_URL" />
-7. Output ONLY the TSX code, no explanations
-
-CRITICAL RULES:
-- NO CSS animations, only frame-based interpolate()
-- extrapolateLeft: 'clamp', extrapolateRight: 'clamp' always
-- Component name must match export default
-- const ComponentName: React.FC = () => { ... }
-```
-
-### Step 2: Add Reference Images (Optional)
-
-Just attach your reference image directly to Claude/ChatGPT message!
-
-### Step 3: Add Asset Images (Optional)
-
-Upload your image to your S3 bucket, copy the public URL, paste it in Claude:
-
-```
-"Use this image for the background: https://your-s3-bucket.s3.amazonaws.com/image.jpg"
-```
-
-### Step 4: Paste & Render in Ploton
-
-1. Copy the TSX code from Claude
-2. Paste in Ploton
-3. Select ratio and duration
-4. Click **Render Video**
-5. Download your MP4!
-
----
-
 ## Renders
 
 All videos saved locally in `/renders` folder.
