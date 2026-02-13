@@ -1,0 +1,26 @@
+{
+  "name": "ploton-remotion",
+  "version": "1.0.0",
+  "description": "Ploton Remotion renderer",
+  "main": "render-remotion.js",
+  "scripts": {
+    "render": "node render-remotion.js"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.290",
+    "@remotion/cli": "4.0.290",
+    "@remotion/renderer": "4.0.290",
+    "@remotion/google-fonts": "4.0.290",
+    "@remotion/three": "4.0.290",
+    "@remotion/lottie": "4.0.290",
+    "@remotion/gif": "4.0.290",
+    "remotion": "4.0.290",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "typescript": "5.3.3"
+  }
+}
